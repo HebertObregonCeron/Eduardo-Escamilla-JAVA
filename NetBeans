@@ -1,0 +1,233 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg4numemayor;
+import java.util.Scanner;
+
+/**
+ *
+ * @author hp
+ */
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner objeto = new Scanner(System.in);
+        
+        int numA, numB, numC, numD, mayor;
+        
+        System.out.println("Ingresa tu primer numero");
+        numA=objeto.nextInt();
+        System.out.println("Ingresa tu segundo numero");
+        numB=objeto.nextInt();
+        System.out.println("Ingresa tu tercer numero");
+        numC=objeto.nextInt();
+        System.out.println("Ingresa tu cuarto numero");
+        numD=objeto.nextInt();
+      
+         if(numA>numB&&numA>numC&&numA>numD)
+         {
+            mayor=numA;
+         }
+         else{
+            if(numB>numA&&numB>numC&&numB>numD)
+            {
+                mayor=numB;
+            }
+            else{
+                if(numC>numA&&numC>numB&&numC>numD)
+                {
+                    mayor=numC;
+                }
+                else
+                    mayor=numD;
+            }
+        }
+        System.out.println("El numero mayor es "+mayor);
+    }
+    
+    
+}
+
+********************************************************
+package areas;
+import java.util.Scanner;
+
+/**
+ *
+ * @author hp
+ */
+public class Areas {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner objeto=new Scanner (System.in);
+        double lado, area, perim, base, alt, perimT, areaT, radio, areaC, perimC, ladoA, ladoB, ladoC, semi, perimTC;
+        System.out.println("Introduce el valor del lado de tu cuadrado");
+        lado=objeto.nextDouble();
+        area=lado*lado;
+        perim=lado*4;
+        System.out.println("El area de tu cuadri es "+area+" Y su perimetro es "+perim);  
+        
+        //triangulo
+        System.out.println("Introduce el valor de la altura de tu triangulo");
+        alt=objeto.nextDouble();
+        System.out.println("Introduce el valor de la base de tu triangulo");
+        base=objeto.nextDouble();
+        areaT=(base*alt)/2;
+        perimT=base*3;
+        System.out.println("El area de tu triangulo es "+areaT+" y el perimetro es "+perimT);
+        
+        System.out.println("Introduce el valor del lado A de un triangulo de cualquier tipo");
+        ladoA=objeto.nextDouble();
+        System.out.println("Introduce el valor del lado B de un triangulo de cualquier tipo");
+        ladoB=objeto.nextDouble();
+        System.out.println("Introduce el valor del lado C de un triangulo de cualquier tipo");
+        ladoC=objeto.nextDouble();
+        perimTC=ladoA+ladoB+ladoC;
+        semi=(ladoA+ladoB+ladoC)/2;
+        System.out.println("El area de tu triangulo es "+semi+" y el perimetro es "+perimT);
+        
+        System.out.println("Introduce el valor del diametro de tu circulo");
+        radio=objeto.nextDouble();
+        
+        areaC=3.1416*radio;
+        perimC=6.2832*radio;
+        
+        System.out.println("El area de tu circulo es de "+areaC+" Y su perimetro es de "+perimC);
+        
+        System.out.println("Resumende tus Figuras:");
+        System.out.println("Cuadrado: Area= "+ area+ "Perimetro= +"+perim);
+        System.out.println("Triangulo: Area= "+ areaT+ "Perimetro= +"+perimT);
+        System.out.println("Triangulo Cualquiera: Area= "+semi+ "Perimetro= +"+perimT);
+        System.out.println("Circulo: Area= "+ areaC+ "Perimetro= +"+perimC);
+        
+    }
+    
+}
+
+
+*********************************************************
+
+
+
+package numeromayor3;
+import java.util.Scanner;
+
+/**
+ *
+ * @author hp
+ */
+public class NumeroMayor3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner objeto =new Scanner(System.in);
+        
+        int numA, numB, numC;
+        
+        System.out.println("Ingresa el Primer Numero");
+        numA=objeto.nextInt();
+        System.out.println("Ingresa el Segundo Numero");
+        numB=objeto.nextInt();
+        System.out.println("Ingresa el Tercer Numero");
+        numC=objeto.nextInt();
+        
+        if (numA > numB) {
+            if (numA > numC) {
+                System.out.println("El mayor es: " + numA);                                             
+            } else {
+                System.out.println("el mayor es: " + numC);     
+            }
+        } else 
+            if (numB > numC) {
+            System.out.println("el mayor es: " + numB);
+        } else {            
+            System.out.println("el mayor es: " + numC);
+        }
+    }
+    
+}
+
+
+**********************************************
+
+package tablax;
+import java.util.Scanner;
+/**
+ *
+ * @author hp
+ */
+public class TablaX {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner objeto = new Scanner(System.in);
+        int x, tabla; 
+        int i=0;
+        
+        System.out.println("Ingresa un numero X");
+        x=objeto.nextInt();
+        System.out.println("_________");
+        
+        while(i<10)
+        {
+           i++;
+           tabla=x*i;
+           System.out.println(x+"x"+i+"="+tabla);
+        }
+           System.out.println("_________");
+
+    }
+    
+}
+
+
+**************************************
+
+package votar;
+import java.util.Scanner;
+
+/**
+ *
+ * @author hp
+ */
+public class Votar {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner objeto = new Scanner (System.in);
+        
+        int edad, años;
+        
+        System.out.println("Ingresa tu Edad");
+        edad=objeto.nextInt();
+        
+        if(edad >=18)
+        {
+            System.out.println("Felicidades ya puedes votar");
+        } else {
+            años=18-edad;
+            System.out.println("Te faltan "+años+" año(s) para votar");
+        }
+           
+    }
+    
+}
